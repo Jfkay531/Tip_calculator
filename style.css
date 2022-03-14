@@ -140,7 +140,7 @@ body {
 
     body {
         background-color: var(--lightgrayishcyan);
-        
+        font-size: 2rem;
         min-height: 100vh;
     }
 
