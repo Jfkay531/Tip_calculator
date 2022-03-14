@@ -154,7 +154,7 @@ body {
     .card {
         display: flex;
         flex-direction: row;
-        width: 75vw;
+        width: 70vw;
         border-radius: 30px;
     }
 
