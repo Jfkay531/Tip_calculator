@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+
+    
+ 
+
+  <div class="container">
+  
+    <img id="logo" src="images/logo.svg" alt="Logo">
+  
+
+    <section class="card">
+      <section class="left">
+        <div class="display">
+          Bill<br>
+  
+          <div class="amt_disp">
+              <div><img src="images/icon-dollar.svg" alt="$"></div>
+              <div><input id='bill-amt' placeholder= "Enter bill here:" type="text"></div>
+          </div>
+          
+        </div>
+  
+        <div class="select-tips">
+          <p style="margin: 20px auto 10px auto;">Select Tip %</p>
+        </div>
+  
+        <div class="btn_tips">
+          <button> 5% </button>
+          <button> 10% </button>
+          <button> 15% </button>
+          <button> 25% </button>
+          <button> 50% </button>
+          <button id="btn_custom" disabled> Custom </button>
+        </div>
+          
+        
+        <p style="margin: 20px auto 10px auto;">Number of People</p>
+        <div class="person">
+            <img src="images/icon-person.svg" alt="icon">
+            <div> 
+              <input id='no-person' type="text" placeholder="1 person" value="1">
+              <!-- <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select> -->
+            </div>
+        </div>
+      </section>  
+
+
+      <section class="right">
+        <div class="tip_results">
+          <div class="tip_amount">
+            <div> <span style="color: white; opacity: 0.9;">Tip Amount </span> <br> <span style="color: white; opacity: 0.4;">/person</span> </div>
+            <div id="amount1">$0.0</div>
+          </div>
+          
+          <form action="#">
+            <div class="no_person">
+              <div> <span style="color: white; opacity: 0.9;">Total </span> <br> <span style="color: white; opacity: 0.4;">/person</span> </div>
+            <div id="amount2">$0.0</div>
+            </div>
+            <button id="btn_reset"> RESET</button>
+          </form>
+          
+        </div>
+      </section>
+  
+    </section>
+   
+    
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Kennedy Raphael</a>.
+    </div>
+
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

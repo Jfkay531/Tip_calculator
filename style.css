@@ -1,0 +1,167 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*, ::before, ::after, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+--strongcyan: hsl(172, 67%, 45%);
+
+/* ### Neutral */
+--verydarkcyan: hsl(183, 100%, 15%);
+--darkgrayishcyan: hsl(186, 14%, 43%);
+--grayishcyan: hsl(184, 14%, 56%);
+--lightgrayishcyan: hsl(185, 41%, 84%);
+--verylightgrayishcyan: hsl(189, 41%, 97%);
+--white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+
+}
+.container{
+    background-color: var(--lightgrayishcyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#logo {
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+#bill-amt {
+    height: 100%;
+    background-color: var(--verylightgrayishcyan);
+    text-align: right;
+    font-size: 24px;
+    border: none;
+    padding: 2px;
+}
+
+.btn_tips{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.btn_tips button {
+    height: 40px;
+    font-size: 24px;
+    color: var(--white);
+    background-color: var(--verydarkcyan);
+    border-radius: 5px;
+    border: 0px solid;
+    cursor: pointer;
+}
+
+.btn_tips button:focus{
+    background-color:var(--strongcyan);
+}
+
+
+.tip_results {
+    background-color: var(--verydarkcyan);
+    padding: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.amt_disp {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verylightgrayishcyan);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--verydarkcyan);
+    font-size: 24px;
+}
+
+#btn_reset {
+    background-color: var(--strongcyan);
+    height: 40px;
+    width: 100%;
+    color: var(--white);
+    border-radius: 5px;
+    border: 0px solid;
+    font-size: 24px;
+    color: var(--verydarkcyan);
+}
+
+
+.tip_amount, .no_person  {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 10px auto;
+}
+
+#amount1, #amount2 {
+    color: var(--strongcyan);
+    font-size: 24px;
+}
+.person {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--verylightgrayishcyan);
+    color: var(--verydarkcyan);
+    font-size: 24px;
+}
+#no-person {
+    border: 0px solid;
+    width: 100px;
+    height: 100%;
+    font-size: 20px;
+    background-color: var(--verylightgrayishcyan);
+    text-align: right;
+    padding: 2px;
+}
+#btn_custom {
+    background-color:var(--verylightgrayishcyan) ;
+    color: var(--verydarkcyan);
+    cursor: pointer
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    body {
+        background-color: var(--lightgrayishcyan);
+        
+        min-height: 100vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 75vw;
+        
+    }
+
+    .left {
+        flex: 50%;
+        padding: 20px;
+    }
+    .right {
+        flex: 50%;
+        padding: 20px;
+        line-height: 3rem;
+    }
+
+    span {
+        line-height: 0;
+    }
+}
