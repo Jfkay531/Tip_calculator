@@ -144,11 +144,17 @@ body {
         min-height: 100vh;
     }
 
+    .container {
+        display: flex; 
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .card {
         display: flex;
         flex-direction: row;
         width: 75vw;
-        
     }
 
     .left {
@@ -158,10 +164,12 @@ body {
     .right {
         flex: 50%;
         padding: 20px;
-        line-height: 3rem;
+        line-height: 2.2rem;
     }
 
-    span {
-        line-height: 0;
+    .btn_tips{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
     }
 }
