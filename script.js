@@ -25,8 +25,8 @@
                 // Apply the tip per person to the bill payable        
                 const totalAmountPerPerson= (billPerson+tip);
 
-                totalTipPerson.textContent= `$${tip}`;
-                tipAmountPerson.textContent= `$${totalAmountPerPerson}` ;
+                totalTipPerson.textContent= `$${tip.toFixed(2)}`;
+                tipAmountPerson.textContent= `$${totalAmountPerPerson.toFixed(2)}` ;
     
        
      })
